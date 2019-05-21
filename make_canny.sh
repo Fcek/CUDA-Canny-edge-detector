@@ -6,8 +6,8 @@
 
 rm canny.cu.o
 rm canny_project 
-/usr/local/cuda-10.1/bin/nvcc -ccbin g++ -I/usr/local/cuda/samples/common/inc  -m64     -o canny.cu.o -c canny.cu
-/usr/local/cuda-10.1/bin/nvcc -ccbin g++ -m64 -o canny_project canny.cu.o  -lcublas -lcusparse -lm -lpthread -lX11
+/usr/local/cuda-10.1/bin/nvcc -ccbin g++ -I/usr/local/cuda/samples/common/inc  -m64      -o canny.cu.o -c canny.cu
+/usr/local/cuda-10.1/bin/nvcc -ccbin g++ -m64 -o canny_project canny.cu.o  -lcublas -lcusparse -lm -lpthread -lX11 
 
 
 
